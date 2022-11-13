@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Xilinx/ssk/alu48/alu48.xst" -ofn "C:/Xilinx/ssk/alu48/alu48.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/ssk/alu48/alu48.xst" -ofn "C:/Xilinx/ssk/alu48/alu48.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/ssk/alu48/alu48.xst" -ofn "C:/Xilinx/ssk/alu48/alu48.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/ssk/alu48/alu48.xst" -ofn "C:/Xilinx/ssk/alu48/alu48.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu48.ucf -p xc3s250e-pq208-5 alu48.ngc alu48.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o alu48_map.ncd alu48.ngd alu48.pcf 
+par -w -intstyle ise -ol high -t 1 alu48_map.ncd alu48.ncd alu48.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml alu48.twx alu48.ncd -o alu48.twr alu48.pcf -ucf alu48.ucf 
+bitgen -intstyle ise -f alu48.ut alu48.ncd 
+xst -intstyle ise -ifn "F:/alu48/alu48.xst" -ofn "F:/alu48/alu48.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu48.ucf -p xc3s250e-pq208-5 alu48.ngc alu48.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o alu48_map.ncd alu48.ngd alu48.pcf 
+par -w -intstyle ise -ol high -t 1 alu48_map.ncd alu48.ncd alu48.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml alu48.twx alu48.ncd -o alu48.twr alu48.pcf -ucf alu48.ucf 
+bitgen -intstyle ise -f alu48.ut alu48.ncd 

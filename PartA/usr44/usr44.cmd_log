@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Xilinx/42254/usr44/usr44.xst" -ofn "C:/Xilinx/42254/usr44/usr44.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-4 usr44.ngc usr44.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o usr44_map.ncd usr44.ngd usr44.pcf 
+par -w -intstyle ise -ol high -t 1 usr44_map.ncd usr44.ncd usr44.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml usr44.twx usr44.ncd -o usr44.twr usr44.pcf 
+bitgen -intstyle ise -f usr44.ut usr44.ncd 
