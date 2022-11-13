@@ -1,0 +1,39 @@
+<!--
+Name: Prathmesh Bonde
+Roll no : 42115 -->
+<html>
+
+<head>
+    <title> JS Multiplication Table</title>
+</head>
+
+<body style="text-align: center">
+    <h1> Multiplication Table </h1>
+    <script>
+        var table = 9;
+        var len = 10;
+        var i = 1;
+        document.write("<br>Multiplication table " + table + " using for loop");
+        for (i = 1; i <= len; i++) {
+            document.write("<br \>" + table + "x" + i + "=" + (table * i));
+        }
+        table = 5;
+        i = 1;
+        document.write("<br><br>");
+        document.write("<br>Multiplication table " + table + " using while loop");
+        while (i <= len) {
+            document.write("<br>" + table + "x" + i + "=" + (table * i));
+            i++;
+        }
+        table = 12;
+        i = 1;
+        document.write("<br><br>");
+        document.write("<br>Multiplication table " + table + " using do-while loop");
+        do {
+            document.write("<br>" + table + "x" + i + "=" + (table * i));
+            i++;
+        } while (i <= len);
+    </script>
+</body>
+
+</html>

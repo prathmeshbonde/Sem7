@@ -1,0 +1,67 @@
+<!-- Name: Prathmesh Bonde
+Roll No.: 42115 -->
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        h1 {
+            color: rgb(51, 78, 153);
+            font-weight: 100;
+            font-size: 40px;
+            margin: 40px 0px 20px;
+        }
+
+        #clockdiv {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #clockdiv>div {
+            padding: 10px;
+            border-radius: 3px;
+            background: rgb(118, 202, 216);
+            display: inline-block;
+        }
+
+        #clockdiv div>span {
+            padding: 15px;
+            border-radius: 3px;
+            background: hsl(184, 92%, 39%);
+            display: inline-block;
+        }
+
+        smalltext {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="Expt5.js"></script>
+    <h1><b>Countdown Timer</b></h1>
+    <h3><b>ICC Men's T20 World Cup</b></h3>
+    <div id=clockdiv>
+        <span class="days" id="day"></span>
+        <div class="smalltext">Days</div>
+        <span class="hours" id="hour"></span>
+        <div class="smalltext">Hours</div>
+        <span class="minutes" id="minute"></span>
+        <div class="smalltext">Minutes</div>
+        <span class="seconds" id="second"></span>
+        <div class="smalltext">Seconds</div>
+    </div>
+    <p id="timeup"></p>
+</body>
+
+</html>
